@@ -41,82 +41,404 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  
+  /* WhatsApp Theme Colors */
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-dark: var(--whatsapp-dark);
+  --color-whatsapp-light: var(--whatsapp-light);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Base radius */
+  --radius: 0.75rem;
+  
+  /* WhatsApp Green Primary */
+  --whatsapp: #25D366;
+  --whatsapp-dark: #128C7E;
+  --whatsapp-light: #DCF8C6;
+  --success: #25D366;
+  --warning: #FFA500;
+  
+  /* Light Mode Colors - Professional & Clean */
+  --background: #F8FAFB;
+  --foreground: #1a1a2e;
+  --card: #ffffff;
+  --card-foreground: #1a1a2e;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a2e;
+  --primary: #25D366;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #334155;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f0fdf4;
+  --accent-foreground: #166534;
+  --destructive: #ef4444;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #25D366;
+  
+  /* Chart colors */
+  --chart-1: #25D366;
+  --chart-2: #128C7E;
+  --chart-3: #075E54;
+  --chart-4: #34B7F1;
+  --chart-5: #FFD93D;
+  
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a1a2e;
+  --sidebar-primary: #25D366;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f0fdf4;
+  --sidebar-accent-foreground: #166534;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #25D366;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+  
+  /* Gradients */
+  --gradient-header: linear-gradient(135deg, #075E54 0%, #128C7E 50%, #25D366 100%);
+  --gradient-card: linear-gradient(135deg, rgba(37, 211, 102, 0.03) 0%, rgba(18, 140, 126, 0.03) 100%);
+  --gradient-primary: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  --gradient-success: linear-gradient(135deg, #25D366 0%, #075E54 100%);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Dark Mode Colors - Not pure black, professional dark grays */
+  --background: #0f1419;
+  --foreground: #e7e9ea;
+  --card: #16202a;
+  --card-foreground: #e7e9ea;
+  --popover: #192734;
+  --popover-foreground: #e7e9ea;
+  --primary: #25D366;
+  --primary-foreground: #ffffff;
+  --secondary: #22303c;
+  --secondary-foreground: #e7e9ea;
+  --muted: #22303c;
+  --muted-foreground: #8899a6;
+  --accent: rgba(37, 211, 102, 0.15);
+  --accent-foreground: #4ade80;
+  --destructive: #f87171;
+  --border: #2f3943;
+  --input: #2f3943;
+  --ring: #25D366;
+  
+  /* Chart colors for dark mode */
+  --chart-1: #4ade80;
+  --chart-2: #34d399;
+  --chart-3: #10b981;
+  --chart-4: #60a5fa;
+  --chart-5: #fbbf24;
+  
+  /* Sidebar Dark */
+  --sidebar: #16202a;
+  --sidebar-foreground: #e7e9ea;
+  --sidebar-primary: #25D366;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(37, 211, 102, 0.15);
+  --sidebar-accent-foreground: #4ade80;
+  --sidebar-border: #2f3943;
+  --sidebar-ring: #25D366;
+  
+  /* Shadows for dark mode */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+  
+  /* Gradients for dark mode */
+  --gradient-header: linear-gradient(135deg, #075E54 0%, #128C7E 50%, #25D366 100%);
+  --gradient-card: linear-gradient(135deg, rgba(37, 211, 102, 0.08) 0%, rgba(18, 140, 126, 0.08) 100%);
+  --gradient-primary: linear-gradient(135deg, #4ade80 0%, #25D366 100%);
+  --gradient-success: linear-gradient(135deg, #4ade80 0%, #128C7E 100%);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+  
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
+  
+  /* Smooth transitions for theme switching */
+  html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--muted-foreground);
+    border-radius: 4px;
+    opacity: 0.5;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--foreground);
+    opacity: 0.7;
+  }
+}
+
+@layer components {
+  /* Professional button styles */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground font-medium px-6 py-2.5 rounded-lg
+           shadow-md hover:shadow-lg transform hover:-translate-y-0.5
+           active:translate-y-0 transition-all duration-200 ease-out
+           focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none;
+    background-image: var(--gradient-primary);
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground font-medium px-6 py-2.5 rounded-lg
+           border border-border hover:bg-accent hover:text-accent-foreground
+           shadow-sm hover:shadow-md transform hover:-translate-y-0.5
+           active:translate-y-0 transition-all duration-200 ease-out
+           focus:outline-none focus:ring-2 focus:ring-ring/50 focus:ring-offset-2;
+  }
+  
+  .btn-danger {
+    @apply bg-destructive text-white font-medium px-6 py-2.5 rounded-lg
+           shadow-md hover:shadow-lg hover:bg-red-600 
+           transform hover:-translate-y-0.5 active:translate-y-0 
+           transition-all duration-200 ease-out
+           focus:outline-none focus:ring-2 focus:ring-destructive/50 focus:ring-offset-2;
+  }
+  
+  /* Card styles */
+  .card-professional {
+    @apply bg-card text-card-foreground rounded-xl border border-border
+           shadow-md hover:shadow-lg transition-all duration-300 ease-out;
+    background-image: var(--gradient-card);
+  }
+  
+  /* Input styles */
+  .input-professional {
+    @apply w-full px-4 py-3 rounded-lg bg-background border border-border
+           text-foreground placeholder:text-muted-foreground
+           focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary
+           transition-all duration-200 ease-out
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  /* Badge styles */
+  .badge-success {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+           bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400;
+  }
+  
+  .badge-warning {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+           bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400;
+  }
+  
+  .badge-error {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+           bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400;
+  }
+  
+  .badge-info {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+           bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400;
+  }
+  
+  /* Progress bar with animation */
+  .progress-animated {
+    @apply relative overflow-hidden rounded-full h-3;
+  }
+  
+  .progress-animated > div {
+    @apply h-full rounded-full transition-all duration-500 ease-out;
+    background-image: var(--gradient-primary);
+    position: relative;
+  }
+  
+  .progress-animated > div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+    animation: shimmer 2s infinite;
+  }
+  
+  /* Table styles */
+  .table-professional {
+    @apply w-full text-sm;
+  }
+  
+  .table-professional th {
+    @apply px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider
+           text-muted-foreground bg-muted/50 border-b border-border;
+  }
+  
+  .table-professional td {
+    @apply px-4 py-3 border-b border-border/50;
+  }
+  
+  .table-professional tbody tr {
+    @apply transition-colors duration-150;
+  }
+  
+  .table-professional tbody tr:hover {
+    @apply bg-accent/50;
+  }
+  
+  .table-professional tbody tr:nth-child(even) {
+    @apply bg-muted/20;
+  }
+  
+  /* Header gradient */
+  .header-gradient {
+    background: var(--gradient-header);
+  }
+  
+  /* Pulse animation for connection status */
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+  }
+  
+  .pulse-dot {
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  
+  /* Shimmer effect */
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  /* Slide in from right */
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  .animate-slideInRight {
+    animation: slideInRight 0.3s ease-out forwards;
+  }
+  
+  /* Bounce subtle */
+  @keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+  
+  .animate-bounce-subtle {
+    animation: bounce-subtle 2s ease-in-out infinite;
+  }
+  
+  /* File drop zone */
+  .drop-zone {
+    @apply border-2 border-dashed border-border rounded-xl p-8 text-center
+           cursor-pointer transition-all duration-300 ease-out
+           hover:border-primary hover:bg-accent/30;
+  }
+  
+  .drop-zone-active {
+    @apply border-primary bg-accent/50 scale-[1.02];
+  }
+  
+  /* Phone input group */
+  .phone-input-group {
+    @apply flex items-center gap-0 overflow-hidden rounded-lg border border-border
+           bg-background shadow-sm transition-all duration-200
+           focus-within:ring-2 focus-within:ring-primary/50 focus-within:border-primary;
+  }
+  
+  .phone-country-select {
+    @apply flex items-center gap-2 px-4 py-3 bg-muted/50 border-r border-border
+           cursor-pointer hover:bg-muted transition-colors duration-200
+           font-medium text-foreground min-w-[120px] justify-between;
+  }
+  
+  .phone-input-field {
+    @apply flex-1 px-4 py-3 bg-transparent outline-none text-foreground
+           placeholder:text-muted-foreground;
+  }
+  
+  /* Contact card */
+  .contact-card {
+    @apply flex items-center justify-between p-4 rounded-lg bg-card border border-border
+           shadow-sm hover:shadow-md hover:border-primary/30
+           transition-all duration-200 ease-out;
+  }
+  
+  /* Status indicator */
+  .status-indicator {
+    @apply w-2.5 h-2.5 rounded-full;
+  }
+  
+  .status-connected {
+    @apply bg-green-500;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  
+  .status-disconnected {
+    @apply bg-gray-400;
+  }
+  
+  .status-connecting {
+    @apply bg-yellow-500;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  
+  /* Tooltip style */
+  .tooltip-professional {
+    @apply absolute z-50 px-3 py-2 text-xs font-medium text-white bg-gray-900 
+           rounded-lg shadow-lg dark:bg-gray-700;
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+}
+
+/* Utility classes for WhatsApp theme */
+.text-whatsapp {
+  color: var(--whatsapp);
+}
+
+.bg-whatsapp {
+  background-color: var(--whatsapp);
+}
+
+.border-whatsapp {
+  border-color: var(--whatsapp);
 }
