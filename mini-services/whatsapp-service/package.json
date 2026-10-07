@@ -1,0 +1,21 @@
+{
+  "name": "whatsapp-service",
+  "version": "1.0.0",
+  "description": "WhatsApp Web automation service for bulk messaging",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch index.ts",
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "playwright": "^1.49.0",
+    "uuid": "^11.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  }
+}
